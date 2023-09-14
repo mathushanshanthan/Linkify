@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&display=swap");
+
+* {
+    overflow: hidden;
+    font-family: "Montserrat";
+    color: #7c7c7c;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.overlay__content {
+    text-align: center;
+}
+
+.fade-out {
+    animation: fadeOutAnimation 1s ease forwards;
+}
+
+@keyframes fadeOutAnimation {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+.overlay__content a {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.overlay__content a:hover {
+    text-align: center;
+    color: #a0a0a0;
+    font-size: 24px;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    margin: 0 auto;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+.video-background {
+    position: absolute;
+    filter: brightness(90%);
+    size: cover;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.container {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.main__content {
+    padding-top: 50px;
+    width: 100%;
+    position: relative;
+    z-index: 50;
+}
+
+.main__avatar img {
+    max-width: 150px;
+    max-height: auto;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    -webkit-user-drag: none;
+}
+
+.main__profile-block1,
+.main__profile-block2 {
+    background-color: #141417;
+}
+
+.main__profile.user-profile {
+    padding-bottom: 20px;
+}
+
+.user-profile__content {
+    margin-top: 100px;
+    height: 80px;
+}
+
+.user-profile {
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 15px;
+    min-height: fit-content;
+}
+
+.user-profile__emojies ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+    margin-bottom: 7px;
+}
+
+.user-profile__emojies ul li img {
+    max-width: 15px;
+    -webkit-user-drag: none;
+}
+
+.user-profile__status {
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    -webkit-user-drag: none;
+}
+
+.user-profile__bio-text {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.user-links {
+    border-radius: 0 0 10px 10px;
+}
+
+.user-links__menu {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.user-links__item {
+    padding: 10px;
+    background-color: #1e1c21;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.user-links__item:hover {
+    box-shadow: 0px 0px 8px -1px rgba(255, 255, 255, 0.3);
+}
+
+.link-icon {
+    width: 30px;
+}
+
+.footer {
+    position: relative;
+    z-index: 50;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 12px;
+    color: #7e7e7e;
+    background-color: #000a;
+}
+
+span {
+    font-size: 15px;
+    animation: opacity 0.45s infinite alternate;
+    font-weight: 200;
+    color: #fff;
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.nickname {
+    font-weight: 600;
+    color: #e0e0e0;
+    background: url('https://media.discordapp.net/attachments/987149728800198686/991834200309248070/sparkle.gif')
+}

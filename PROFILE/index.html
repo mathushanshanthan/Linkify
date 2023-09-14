@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/reset.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+    <title>
+        linkify
+    </title>
+</head>
+<body>
+    <div class="overlay" onclick="handleOverlayClick()">
+        <div class="overlay__content">
+            <a>— click anywhere —</a>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <main class="main">
+            <div class="main__container">
+                <div class="main__video-background">
+                    <video class="video-background" src="assets/img/background.mp4" preload loop>
+
+                    </video>
+                </div>
+                <audio src="assets/aud/track.mp3" preload></audio>
+
+                <div class="container">
+                    <div class="main__content">
+                        <div class="main__profile-block1 user-profile">
+                            <div class="main__avatar">
+                                <img src="assets/img/avatar.gif" alt="avatar">
+                            </div>
+                            <div class="user-profile user-profile__content">
+                                <div class="user-profile__emojies">
+                                    <ul>
+                                        <li>
+                                            <h1 class="nickname">
+                                                mathushan
+                                            </h1>
+                                        </li>
+                                        <!-- <li>
+                                            <img src="assets/img/heart.png" alt="Premium">
+                                        </li> -->
+                                        <li>
+                                            <img src="assets/img/verified.png" alt="Owner">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="user-profile__status">
+                                    21 yo / web-dev. <!-- description -->
+                                </div>
+                                <div class="user-profile__bio-text" id="status">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__profile-block2 user-links">
+                            <nav class="main__user-links">
+                                <ul class="user-links__menu">
+                                    <li class="user-links__item">
+                                        <a href="mathush"> <!-- link to your instagram -->
+                                            <img class="link-icon" src="assets/img/instagram.svg" alt="discord">
+                                        </a>
+                                    </li>
+                                    <li class="user-links__item">
+                                        <a href="mathush"> <!-- link to your telegram -->
+                                            <img class="link-icon" src="assets/img/telegram.svg" alt="discord">
+                                        </a>
+                                    </li>
+                                    <li class="user-links__item">
+                                        <a href="mathush"> <!-- link to your discord -->
+                                            <img class="link-icon" src="assets/img/discord.svg" alt="discord">
+                                        </a>
+                                    </li>
+                                    <li class="user-links__item">
+                                        <a href="mathush"> <!-- link to your snapchat -->
+                                            <img class="link-icon" src="assets/img/snapchat.svg" alt="discord">
+                                        </a>
+                                    </li>
+                                    <li class="user-links__item">
+                                        <a href="mathush"> <!-- link to your steam -->
+                                            <img class="link-icon" src="assets/img/steam.svg" alt="discord">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <p>developed by mathushan</p>
+        </footer>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
